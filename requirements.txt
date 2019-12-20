@@ -1,0 +1,4 @@
+emoji
+nltk
+gender_guesser
+scikit-learn
