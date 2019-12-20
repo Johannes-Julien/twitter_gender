@@ -18,4 +18,19 @@ The last two columns are added:
 * ‘prediction’: the prediction result ‘female’ or ‘male'
 * ‘source’: If the final prediction has happened based on the name (’name) or on description + last tweet (’text’)
 
+# Can I classify unseen examples?
+
+Yes.
+`from twitter_gender.file_processor import ProcessUsers
+
+process_users = ProcessUsers()
+
+labels = ['female', 'male']
+
+gender = process_users.gender_classifier.get_gender_by_name('Johannes Erett')
+print(labels[gender])
+
+gender = process_users.gender_classifier.get_gender_by_text_custom('I am a woman of great faith... in unicorns ❤️ ')
+print(labels[gender])`
+
 Tested with Python 3.7.1
