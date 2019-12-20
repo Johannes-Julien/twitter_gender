@@ -240,7 +240,7 @@ class ProcessUsers(object):
 		print('CUSTOM classifier for english profiles only:')
 		process_ground_truth(self.gender_classifier, classifier_type='custom', language='en')
 
-		# self.enrich_dataset()
+		self.enrich_dataset()
 
 
 # Make script accessible for Terminal commands
