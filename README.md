@@ -30,9 +30,11 @@ labels = ['female', 'male']
 
 gender = process_users.gender_classifier.get_gender_by_name('Johannes Erett')
 print(labels[gender])
+  >> 'male'
 
 gender = process_users.gender_classifier.get_gender_by_text_custom('I am a woman of great faith... in unicorns ❤️ ')
 print(labels[gender])
+  >> 'female'
 ```
 
 Tested with Python 3.7.1
