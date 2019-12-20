@@ -37,4 +37,10 @@ print(labels[gender])
   >> 'female'
 ```
 
+# What comes next?
+
+Currently the classifier is not stored, but alsways built and trained from scratch. I would recommend to pickle and re-load it.
+
+
+
 Tested with Python 3.7.1
