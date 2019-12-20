@@ -21,7 +21,8 @@ The last two columns are added:
 # Can I classify unseen examples?
 
 Yes.
-`from twitter_gender.file_processor import ProcessUsers
+```
+from twitter_gender.file_processor import ProcessUsers
 
 process_users = ProcessUsers()
 
@@ -31,6 +32,7 @@ gender = process_users.gender_classifier.get_gender_by_name('Johannes Erett')
 print(labels[gender])
 
 gender = process_users.gender_classifier.get_gender_by_text_custom('I am a woman of great faith... in unicorns ❤️ ')
-print(labels[gender])`
+print(labels[gender])
+```
 
 Tested with Python 3.7.1
