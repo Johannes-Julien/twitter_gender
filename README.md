@@ -39,8 +39,9 @@ print(labels[gender])
 
 # What comes next?
 
-Currently the classifier is not stored, but alsways built and trained from scratch. I would recommend to pickle and re-load it.
+* Currently the classifier is not stored, but alsways built and trained from scratch. I would recommend to pickle and re-load it.
 
+* Code needs better structure and more documentation.
 
 
 Tested with Python 3.7.1
