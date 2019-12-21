@@ -26,7 +26,7 @@ from twitter_gender.file_processor import ProcessUsers
 
 process_users = ProcessUsers()
 
-labels = ['female', 'male']
+labels = ['unknown', 'female', 'male']
 
 gender = process_users.gender_classifier.get_gender_by_name('Johannes Erett')
 print(labels[gender])
